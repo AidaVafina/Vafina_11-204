@@ -9,6 +9,10 @@ public class Matrix {
         innerMatrix[i][j] = value;
     }
 
+    public int getElement(int i, int j){
+        return innerMatrix[i][j];
+    }
+
     public int getMatrixSize() {
         return innerMatrix.length;
     }
@@ -25,16 +29,28 @@ public class Matrix {
     }
 
     public void printDeter(Matrix matrix) {
-        Matrix.calculateTheDeterminant(matrix);
+        System.out.println("определитель матрицы равен " + Matrix.calculateTheDeterminant(matrix));
     }
 
-    public static void calculateTheDeterminant(Matrix matrix) {
+    public static int calculateTheDeterminant(Matrix matrix) {
         if (matrix.getMatrixSize() == 3) {
             int determinant = matrix.countPositivSum() - matrix.countNegativeSum();
-            System.out.println(determinant);
+            return determinant;
         } else {
-            System.out.println("размер матрицы != 3");
+            return 0;
         }
     }
+
+    public static int countSumElem(Matrix matrix){
+        int sumEl = 0;
+        for (int i = 0; i < matrix.getMatrixSize(); i++) {
+            for (int j = 0; j < matrix.getMatrixSize(); j++) {
+                sumEl += matrix.getElement(i,j);
+            }
+        }
+        return sumEl;
+    }
+
+
 
 }
