@@ -1,16 +1,13 @@
 public class MainCar {
     public static void main(String[] args) {
-        CasualCar car1 = new CasualCar(100, 150);
-        F1Car car2 = new F1Car( 60, 220);
-        BoosterCar car3 = new BoosterCar(100,200,8);
+        CasualCar casualCar = new CasualCar(200, 300, 60, 120);
+        F1Car f1Car = new F1Car(200, 200, 40, 240);
+        BoosterCar boosterCar = new BoosterCar(200,250,40,100,1);
 
-        System.out.println(car1.countDistance(10));
-        System.out.println(car2.countDistance(10));
-        System.out.println(car3.countDistance(10));
+        System.out.println(casualCar.countDistance(3));
+        System.out.println(boosterCar.countDistance(3));
+        System.out.println(f1Car.countDistance(3));
 
-        Car firstCar = new Car(50,45);
-        F1Car secondCar = new F1Car(32,12);
-        BoosterCar thirdCar = new BoosterCar(40,30,1);
-        Race.start(firstCar,secondCar,thirdCar,6);
+        Race.start(casualCar,boosterCar,f1Car,3);
     }
 }

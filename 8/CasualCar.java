@@ -1,6 +1,6 @@
 public class CasualCar extends Car{
-    public CasualCar(int speedFirst3Minutes, int speedAfter){
-        super(speedFirst3Minutes,speedAfter);
+    public CasualCar(double weight, double hoursePower, int speedFirst3Minutes, int speedAfter){
+        super(weight, hoursePower,speedFirst3Minutes,speedAfter);
     }
 
     @Override
@@ -10,6 +10,6 @@ public class CasualCar extends Car{
 
     @Override
     public String toString() {
-        return "CasualCar{" +  ", speedFirst3Minutes=" + speedFirst3Minutes + ", speedAfter=" + speedAfter + '}';
+        return "CasualCar{" + "weight = " + weight + "horsePower = " + horsePower + ", speedFirst3Minutes=" + speedFirst3Minutes + ", speedAfter=" + speedAfter + '}';
     }
 }
