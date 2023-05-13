@@ -65,7 +65,7 @@ public class Main {
 
         // 5 задание
         List<Car> sortedCars2 = (List<Car>) carList.stream().sorted((x, y) -> x.price.compareTo(y.price)).collect(Collectors.toList());
-        //System.out.println(sortedCars2.get(0));
+        System.out.println(sortedCars2.get(0));
 
     }
     public static class Car{
