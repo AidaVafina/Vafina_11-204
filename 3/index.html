@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+<p>Введите информацию: </p>
+<label for="name">Имя: </label>
+<input id="name" type="text" name="name"/>
+
+<label for="surname">Фамилия: </label>
+<input id="surname" type="text" name="surname"/>
+
+<label for="age">Возраст: </label>
+<input id="age" type="number" name="age"/>
+
+<input type="submit" value="Добавить" onclick="if(validateForm()) { add() }"/>
+
+<table id = "myTable" border="1">
+</table>
+
+    <script>
+        function add() {
+    var name = document.getElementById("name").value.trim();
+    var surname = document.getElementById("surname").value.trim();
+    var age = document.getElementById("age").value.trim();
+
+    var table = document.getElementById("myTable");
+
+    var newRow = table.insertRow(-1);
+
+    var cell1 = newRow.insertCell(0);
+    cell1.textContent = name;
+
+    var cell2 = newRow.insertCell(1);
+    cell2.textContent = surname;
+
+     var cell3 = newRow.insertCell(2);
+     cell3.textContent = age;
+
+     checkPalindrome(name);
+     checkPalindrome(surname);
+     checkPalindrome(age);
+
+    document.getElementById("name").value = "";
+    document.getElementById("surname").value = "";
+    document.getElementById("age").value = "";
+}
+
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var surname = document.getElementById("surname").value;
+    var age = document.getElementById("age").value;
+
+    if (name === "") {
+        alert("Введите имя");
+        return false;
+    }
+
+    if (surname === "") {
+        alert("Введите фамилию");
+        return false;
+    }
+
+    if (age === "") {
+        alert("Введите возраст (цифрами)");
+        return false;
+    }
+
+    return true;
+}
+
+function checkPalindrome(str) {
+    var reverseStr = str.split("").reverse().join("");
+
+    if (str === reverseStr) {
+        alert("Введенный текст '" + str + "' является палиндромом.");
+    } else {
+        alert("Введенный текст '" + str + "' не является палиндромом.");
+    }
+}
+    </script>
+
+</body>
+</html>
