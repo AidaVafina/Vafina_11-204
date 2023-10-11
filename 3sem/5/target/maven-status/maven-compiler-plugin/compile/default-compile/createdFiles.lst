@@ -1,0 +1,7 @@
+ru\itis\model\Message.class
+ru\itis\servlet\SendMessageServlet.class
+ru\itis\servlet\NameServlet.class
+ru\itis\servlet\MessageServletContextListener.class
+ru\itis\servlet\GetMessageServlet.class
+ru\itis\repository\UserRep.class
+ru\itis\model\User.class
