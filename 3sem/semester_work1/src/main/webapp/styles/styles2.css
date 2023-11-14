@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe0e5;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d0b7bb;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.form-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-container input[type="text"] {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e4647;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #999;
+}
+
+
+/*форма для ввода информациии (bookadd)*/
+.form-container input[type="text"] {
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e4647;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #999;
+}
+
+.form-container input[type="text"] + br {
+    display: block;
+    content: "";
+    margin-bottom: 20px;
+}
+
+.container-form-booklist {
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+    width: 800px;
+    height: 1000px;
+    padding-right: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+#bookList {
+    flex: 1;
+    padding-left: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+
