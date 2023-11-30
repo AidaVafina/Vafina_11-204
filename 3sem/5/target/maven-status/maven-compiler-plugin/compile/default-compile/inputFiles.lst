@@ -1,4 +1,7 @@
-C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\SendMessageServlet.java
-C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\MessageServletContextListener.java
-C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\NameServlet.java
-C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\GetMessageServlet.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\model\User.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\servlet\MessageServletContextListener.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\servlet\GetMessageServlet.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\model\Message.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\servlet\NameServlet.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\repository\UserRep.java
+C:\Users\79874\Desktop\Vafina_11-204\3sem\5\src\main\java\ru\itis\servlet\SendMessageServlet.java
